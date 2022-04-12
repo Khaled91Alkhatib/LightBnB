@@ -123,7 +123,7 @@ const getAllProperties = function (options, limit = 10) {
   // Check if a parameter has been passed in as an option. Add the parameter to the params array and create a WHERE clause for it
   if (options.city) {
     queryParams.push(`%${options.city}%`);
-    queryString += `WHERE city LIKE $${queryParams.length} `;
+    queryString += `WHERE LOWER(city) LIKE LOWER ($${queryParams.length}) `; // Use LOWER to make search case-insensitive
   }
 
   if (options.ownder_id) {
@@ -131,7 +131,7 @@ const getAllProperties = function (options, limit = 10) {
     if (queryParams.length === 1) {
       queryString += `WHERE owner_id = $${queryParams.length} `;
     } else {
-      queryString += `AND owner_id = $${queryParams.length} `; // Used when we have another parameter in the params array
+      queryString += `AND owner_id = $${queryParams.length} `; // Use when we have another parameter in the params array
     }
   }
 
