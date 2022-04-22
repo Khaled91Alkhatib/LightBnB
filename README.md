@@ -12,8 +12,17 @@ Finally, We connect the database to javascript application so that we can intera
 !["User's reservations"](https://github.com/Khaled91Alkhatib/LightBnB/blob/master/screenshots/User's%20reservations.png?raw=true)
 !["Create listing tab"](https://github.com/Khaled91Alkhatib/LightBnB/blob/master/screenshots/Create%20listing%20tab.png?raw=true)
 
+## Set Up Instructions
+
+Download the project from https://github.com/lighthouse-labs/LightBnB_WebApp.
+
+## Warning
+
+Don't clone this project, just select the Download Zip option.
+
 ## Getting started
 
-1. Install dependencies using the `npm install` command.
-2. Start the web server using the `npm run local` command. The app will be served at <http://localhost:3000/>.
-3. Go to <http://localhost:3000/> in your browser.
+1. Extract and drag the extracted LightBnB_WebApp folder into your lightbnb folder. Commit this change. cd into the LightBnB_WebApp directory.
+2. Install dependencies using the `npm install` command.
+3. Start the web server using the `npm run local` command. The app will be served at <http://localhost:3000/>.
+4. Go to <http://localhost:3000/> in your browser.
